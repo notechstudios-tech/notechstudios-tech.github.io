@@ -17,19 +17,33 @@
     header {
       background: #111;
       border-bottom: 1px solid #222;
-      padding: 28px 32px;
+      padding: 40px 32px;
+      text-align: center;
+    }
+
+    .header-inner {
+      display: inline-flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header img.logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 12px;
     }
 
     header h1 {
-      font-size: 1.8rem;
+      font-size: 3.2rem;
       font-weight: 700;
-      letter-spacing: -0.5px;
+      letter-spacing: -1px;
+      line-height: 1.1;
     }
 
     header p {
       font-size: 0.9rem;
       color: #666;
-      margin-top: 4px;
+      margin-top: 6px;
     }
 
     .section-title {
@@ -38,7 +52,7 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: #555;
-      padding: 40px 32px 12px;
+      padding: 28px 32px 12px;
       max-width: 720px;
       margin: 0 auto;
     }
@@ -46,7 +60,7 @@
     .app-list {
       max-width: 720px;
       margin: 0 auto;
-      padding: 0 24px 80px;
+      padding: 0 24px 8px;
     }
 
     .app-row {
@@ -100,8 +114,13 @@
 <body>
 
 <header>
-  <h1>NoTech Studios</h1>
-  <p>Independent apps &amp; games for Android</p>
+  <div class="header-inner">
+    <img class="logo" src="logo.png" alt="NoTech Studios logo" />
+    <div>
+      <h1>NoTech Studios</h1>
+      <p>Independent apps &amp; games for Android</p>
+    </div>
+  </div>
 </header>
 
 <div class="section-title">Games</div>
